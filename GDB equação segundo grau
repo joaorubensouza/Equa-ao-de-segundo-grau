@@ -1,0 +1,32 @@
+codigo em java:
+
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        double a, b, c, delta, raiz,x1,x2;
+        /// ENTRADA
+          Scanner sc = new Scanner(System.in);
+        System.out.println("Equação de 2 grau que retonar a raiz defina o valor dos coeficientes a, b e c : ");
+        a = sc.nextDouble();
+        b = sc.nextDouble();
+        c = sc.nextDouble();
+        delta = b * b - 4 * a * c;
+        raiz = Math.sqrt(delta);
+        if(raiz>0){
+            x1 = ( -b + raiz)/2*a;
+            x2 = ( -b - raiz)/2*a;
+        System.out.println("x1 e igual : " + x1);
+        System.out.println("x2 e igual : " + x2);
+        }
+        else if (raiz == 0) { 
+            x1 = (-b + raiz)/2*a;
+        System.out.println("o Valor de x1 é : " + x1 );
+    }
+        else{
+        System.out.println("NÃO TEM RESULTADO DELTA MENOR QUE 0" );
+
+        }
+    }
+    }
+
